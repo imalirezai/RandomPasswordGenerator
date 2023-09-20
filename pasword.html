@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Password Genrator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="pasword.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="password-container">
+      <h2>Random Password Genrator</h2>
+
+      <div class="input-container">
+        <input
+          type="text"
+          id="input"
+          class="input"
+          placeholder="Create password"
+          readonly
+        />
+        <i class="far fa-copy"></i>
+      </div>
+      <button type="" class="password-btn">Generate</button>
+    </div>
+    <div class="alert-container active">Password copied</div>
+    <script src="pasword.js"></script>
+  </body>
+</html>

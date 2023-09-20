@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: monospace;
+}
+
+.password-container {
+  background-image: url("https://img.freepik.com/free-photo/beautiful-scenery-greenfield-cloudy-sky_181624-6434.jpg?size=626&ext=jpg&ga=GA1.1.2094957132.1695137662&semt=sph");
+  opacity: 1;
+  box-shadow: 2px 4px 2px gray;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40%;
+  height: 140px;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+h2 {
+  color: black;
+}
+
+.input-container {
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 2px 4px 2px gray;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+.input::placeholder {
+  letter-spacing: 0px;
+}
+
+.fa-copy {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.fa-copy:hover {
+  opacity: 1;
+}
+
+.password-btn {
+  margin-top: 15px;
+  font-weight: bolder;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 5px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.password-btn:hover {
+  background-color: green;
+}
+
+.password-btn:active {
+  transform: scale(0.95);
+}
+.alert-container {
+  position: fixed;
+  width: 300px;
+  height: 50px;
+  background-color: lightgreen;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.active.alert-container {
+  right: -300px;
+}
